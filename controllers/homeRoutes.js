@@ -27,6 +27,7 @@ router.get('/', (req, res) => {
   })
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
+      // Put post on the homepage
       res.render('homepage', { 
         posts,
         loggedIn: req.session.loggedIn 
@@ -84,9 +85,10 @@ router.get('/post/:id', (req, res) => {
       return;
     }
 
+    // Make sure to include data serialization!
     const post = dbPostData.get({ plain: true });
 
-    res.render('single-post', {
+    res.render('post', {
       post, 
       loggedIn: req.session.loggedIn
     });
