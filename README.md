@@ -3,9 +3,7 @@
 
 ## Description
 
-```
 Tech Talk is a tech blog where developers can publish their own blog posts and comment on other users' posts as well.
-```
 
 ## Tabe of Contents
 
@@ -100,4 +98,14 @@ npm i connect-session-sequelize
 
 ## References
 
-* []()
+* [Backdrop](https://docs.backdropcms.org/api/backdrop/functions?object_name=&summary=&page=35&order=file_name&sort=asc)
+
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
+
+* [MDN2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
+* [SitePoint](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+
+* [StackOverflow](https://stackoverflow.com/questions/11817950/what-is-data-serialization)
+
+* [StackOverflow2](https://stackoverflow.com/questions/27194359/javascript-pluralize-an-english-string)
