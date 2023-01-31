@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
   });
 });
 
-// Get route for a single user (id)
+// Get route for a single user by id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -142,6 +142,5 @@ router.delete('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
-
 
 module.exports = router;

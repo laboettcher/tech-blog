@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// Get all route
+// Get all comments route
 router.get('/', (req, res) => {
   Comment.findAll()
   .then(dbCommentData => res.json(dbCommentData))
@@ -29,7 +29,7 @@ router.post('/', withAuth, (req, res) => {
   }
 });
 
-// Deleter route (destroy)
+// Delete route (destroy)
 router.delete('/:id', (req, res) => {
   Comment.destroy({
     where: {
